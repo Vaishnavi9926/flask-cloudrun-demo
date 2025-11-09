@@ -3,6 +3,9 @@ substitutions:
   _SERVICE_NAME: "flask-demo"
   _REGION: "us-central1"
 
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 steps:
   # Build docker image
   - name: 'gcr.io/cloud-builders/docker'
